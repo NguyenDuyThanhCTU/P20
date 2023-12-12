@@ -19,7 +19,7 @@ const HomePage = async () => {
   return (
     <div>
       <HomeSlide />
-      <div className="w-[1200px] mx-auto hi">
+      <div className="p:w-auto d:w-[1200px] p:mx-2 d:mx-auto hi">
         <ShortIntro />
       </div>
       <HomeService />

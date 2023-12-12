@@ -8,7 +8,7 @@ const HomeService1 = () => {
         <div className="bg-center bg-no-repeat bg-[url(https://firebasestorage.googleapis.com/v0/b/suanhacantho-3b53d.appspot.com/o/UI%2FUntitled.png?alt=media&token=bdd28cc7-79bf-453a-b24e-9d0ec902a960)] py-10 text-center text-[25px]  font-normal text-blue-800">
           TẠI SAO BẠN NÊN CHỌN TÂM NGUYÊN
         </div>
-        <div className="grid grid-cols-3 gap-6 w-[1200px] mx-auto">
+        <div className="grid  gap-6  d:grid-cols-3 p:grid-cols-1 p:w-auto d:w-[1200px] p:mx-2 d:mx-auto">
           {HomeServiceItems1.map((item, index) => (
             <div
               key={index}

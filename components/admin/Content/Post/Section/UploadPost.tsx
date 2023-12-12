@@ -6,7 +6,14 @@ import { notification } from "antd";
 import { useStateProvider } from "@context/StateProvider";
 import { useData } from "@context/DataProviders";
 import { addDocument } from "@config/Services/Firebase/FireStoreDB";
-import { TypePostItems } from "@assets/item";
+import {
+  ServiceItems,
+  ServiceItems1,
+  ServiceItems2,
+  ServiceItems3,
+  ServiceItems4,
+  TypePostItems,
+} from "@assets/item";
 import Input from "@components/admin/Item/Input";
 import { AiOutlineCloudUpload } from "react-icons/ai";
 import {
@@ -14,7 +21,7 @@ import {
   uploadImage,
 } from "@components/items/server-items/Handle";
 
-const UploadPost: React.FC = () => {
+const UploadPost = ({ type, Url }: any) => {
   const [Title, setTitle] = useState<string>("");
   const [url, setUrl] = useState<string>("");
   const [Topic, setTopic] = useState<string>("");
@@ -40,65 +47,50 @@ const UploadPost: React.FC = () => {
     handleChange();
   }, [Title]);
 
-  const HandleUploadPosts = (type: string) => {
-    if (type === "news") {
-      if (!Title) {
-        notification.error({
-          message: "Lỗi !",
-          description: `Vui lòng chọn loại bài viết trước khi TIẾP TỤC!`,
-        });
-      } else {
-        const data = {
-          title: Title,
-          url: url,
-          topic: Topic,
-          topicUrl: topicUrl,
-          image: imageUrl,
-          content: "",
-          type: "news",
-        };
-        addDocument("posts", data).then((data) => {
-          notification.success({
-            message: "Thành công!",
-            description: `Thông tin đã được CẬP NHẬT !`,
-          });
-
-          setUpdateId(data);
-          setDropDown("add-post");
-          setIsRefetch("CRUD posts");
-          setTitle("");
-          setImageUrl("");
-        });
-      }
+  const HandleUploadPosts = () => {
+    if (!Title) {
+      notification.error({
+        message: "Lỗi !",
+        description: `Vui lòng chọn loại bài viết trước khi TIẾP TỤC!`,
+      });
     } else {
-      // const data = {
-      //   topic: Topic,
-      //   topicUrl: topicUrl,
-      //   content: "",
-      //   type: "introduction",
-      // };
-      // addDocument("posts", data).then((data) => {
-      //   notification.success({
-      //     message: "Thành công!",
-      //     description: `Thông tin đã được CẬP NHẬT !`,
-      //   });
+      const data = {
+        title: Title,
+        url: url,
+        topic: Topic,
+        topicUrl: topicUrl,
+        image: imageUrl,
+        content: "",
+        type: type,
+        typeUrl: Url,
+      };
+      addDocument("posts", data).then((data) => {
+        notification.success({
+          message: "Thành công!",
+          description: `Thông tin đã được CẬP NHẬT !`,
+        });
 
-      //   setUpdateId(data);
-      //   setDropDown("add-post");
-      //   setIsRefetch("CRUD posts");
-      //   setTitle("");
-      //   setImageUrl("");
-      // });
-      const sort = Posts.filter((item: any) => item.topicUrl === topicUrl);
-      if (sort) {
-        setUpdateId(sort[0]?.id);
+        setUpdateId(data);
         setDropDown("add-post");
-      }
+        setIsRefetch("CRUD posts");
+        setTitle("");
+        setImageUrl("");
+      });
     }
   };
 
   const HandleChange = (value: string) => {
-    const sort = TypePostItems.filter((item) => item.value === value);
+    const sort: any = (
+      type === "Dịch Vụ Vệ Sinh"
+        ? ServiceItems3
+        : type === "Dịch Vụ"
+        ? ServiceItems
+        : type === "Nội Thất"
+        ? ServiceItems1
+        : type === "Xây Dựng"
+        ? ServiceItems4
+        : ServiceItems2
+    ).filter((item: any) => item.value === value);
     setTopic(sort[0].label);
     setTopicUrl(sort[0].value);
   };
@@ -128,18 +120,16 @@ const UploadPost: React.FC = () => {
         </div>
         <div className="h-[250px] text-black w-full">
           <div>
-            {topicUrl === "tin-tuc" && (
-              <>
-                {" "}
-                <Input
-                  text="Tiêu đề bài viết"
-                  Value={Title}
-                  setValue={setTitle}
-                  Input={true}
-                  PlaceHolder="Nhập tiêu đề bài viết..."
-                />
-              </>
-            )}
+            <>
+              {" "}
+              <Input
+                text="Tiêu đề bài viết"
+                Value={Title}
+                setValue={setTitle}
+                Input={true}
+                PlaceHolder="Nhập tiêu đề bài viết..."
+              />
+            </>
 
             <div className="flex flex-col gap-2 mb-2">
               <label className="text-md font-medium ">Loại bài viết:</label>
@@ -148,7 +138,16 @@ const UploadPost: React.FC = () => {
                 onChange={(e) => HandleChange(e.target.value)}
               >
                 <option>-- Chọn loại bài viết --- </option>
-                {TypePostItems.map((item: any, idx: number) => (
+                {(type === "Dịch Vụ Vệ Sinh"
+                  ? ServiceItems3
+                  : type === "Dịch Vụ"
+                  ? ServiceItems
+                  : type === "Nội Thất"
+                  ? ServiceItems1
+                  : type === "Xây Dựng"
+                  ? ServiceItems4
+                  : ServiceItems2
+                ).map((item: any, idx: number) => (
                   <option
                     key={idx}
                     className=" outline-none capitalize bg-white text-gray-700 text-md p-2 hover:bg-slate-300"
@@ -159,35 +158,34 @@ const UploadPost: React.FC = () => {
                 ))}
               </select>
             </div>
-            {topicUrl === "tin-tuc" && (
-              <>
-                <div className="flex gap-5  items-end ">
-                  <Input
-                    text="Liên kết hình ảnh"
-                    Value={imageUrl}
-                    setValue={setImageUrl}
-                    Input={true}
-                    PlaceHolder=""
-                  />
 
-                  <div>
-                    <label>
-                      <div className="cursor-pointer">
-                        <div className="flex gap-1 items-center p-2 px-4 bg-red-500 hover:bg-red-600 border text-white rounded-full">
-                          <AiOutlineCloudUpload className="text-[32px] " />
-                        </div>
+            <>
+              <div className="flex gap-5  items-end ">
+                <Input
+                  text="Liên kết hình ảnh"
+                  Value={imageUrl}
+                  setValue={setImageUrl}
+                  Input={true}
+                  PlaceHolder=""
+                />
 
-                        <input
-                          type="file"
-                          className="w-0 h-0"
-                          onChange={(e) => HandleUploadImage(e, "posts")}
-                        />
+                <div>
+                  <label>
+                    <div className="cursor-pointer">
+                      <div className="flex gap-1 items-center p-2 px-4 bg-red-500 hover:bg-red-600 border text-white rounded-full">
+                        <AiOutlineCloudUpload className="text-[32px] " />
                       </div>
-                    </label>
-                  </div>
+
+                      <input
+                        type="file"
+                        className="w-0 h-0"
+                        onChange={(e) => HandleUploadImage(e, "posts")}
+                      />
+                    </div>
+                  </label>
                 </div>
-              </>
-            )}
+              </div>
+            </>
           </div>
         </div>
 
@@ -199,21 +197,13 @@ const UploadPost: React.FC = () => {
             >
               Nhập lại
             </div>
-            {topicUrl === "tin-tuc" ? (
-              <div
-                className="px-10 py-3 rounded-xl border-2 border-blue-500 bg-blue-500 text-white hover:bg-blue-700 duration-300 hover:border-blue-700 cursor-pointer"
-                onClick={() => HandleUploadPosts("news")}
-              >
-                Tiếp tục
-              </div>
-            ) : (
-              <div
-                className="px-10 py-3 rounded-xl border-2 border-blue-500 bg-blue-500 text-white hover:bg-blue-700 duration-300 hover:border-blue-700 cursor-pointer"
-                onClick={() => HandleUploadPosts("introduction")}
-              >
-                Tiếp tục
-              </div>
-            )}
+
+            <div
+              className="px-10 py-3 rounded-xl border-2 border-blue-500 bg-blue-500 text-white hover:bg-blue-700 duration-300 hover:border-blue-700 cursor-pointer"
+              onClick={() => HandleUploadPosts()}
+            >
+              Tiếp tục
+            </div>
           </>
         </div>
       </div>

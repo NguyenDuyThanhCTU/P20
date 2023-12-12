@@ -19,7 +19,7 @@ const ShortIntro = () => {
       <div className="flex gap-2 py-5 p:px-0 d:px-5 d:flex-row p:flex-col">
         <div className=" flex-[45%] h-[500px]">
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/nemvieta-b328d.appspot.com/o/z4926213423129_60764889b887dc10fde5ab3019538769.jpg?alt=media&token=6328da6b-9e6a-4c3d-a618-54290e562f79"
+            src="https://vesinhcongnghiepcantho.com/wp-content/uploads/2021/06/c363e3920bfff9a1a0ee_photos_v2_x2_colored_toned-1024x683-1.jpg.webp"
             alt="banner"
             className="w-full h-full object-contain"
           />

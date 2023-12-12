@@ -36,14 +36,14 @@ const Content: React.FC = () => {
           </div>
         ) : isSelected === 3 ? (
           <>
-            <div className="p-5 d:px-10 p:px-2 flex justify-start gap-10">
-              <Post />
+            <div className="p-5 d:px-10 p:px-2 flex flex-col justify-start gap-10">
+              <Post type="Dịch Vụ Vệ Sinh" />
             </div>
           </>
         ) : isSelected === 4 ? (
           <>
             <div className="p-5 d:px-10 p:px-2 flex justify-start gap-10">
-              <Video />
+              <Post type="Dịch Vụ" />
             </div>
           </>
         ) : isSelected === 5 ? (
@@ -62,21 +62,21 @@ const Content: React.FC = () => {
         ) : isSelected === 7 ? (
           <>
             <div className="p-5 d:px-10 p:px-2 flex justify-start gap-10">
-              <Product />
+              <Post type="Nội Thất" />
             </div>
           </>
         ) : isSelected === 8 ? (
           <>
             <div className="p-5 d:px-10 p:px-2 flex justify-start gap-10">
               <>
-                <Sale />
+                <Post type="Xây Dựng" />
               </>
             </div>
           </>
         ) : isSelected === 9 ? (
           <>
             <div className="p-5 d:px-10 p:px-2 flex justify-start gap-10">
-              <Order />
+              <Post type="Tin Tức" />
               <></>
             </div>
           </>

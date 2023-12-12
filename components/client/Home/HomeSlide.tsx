@@ -9,7 +9,7 @@ import Link from "next/link";
 const HomeSlide = () => {
   const { Slides } = useData();
   return (
-    <div>
+    <div className="z-0">
       <div>
         <Swiper
           spaceBetween={30}
@@ -35,7 +35,7 @@ const HomeSlide = () => {
                   <img
                     src={item.image}
                     alt="slide"
-                    className="w-full    hover:scale-105 duration-300 object-cover "
+                    className="w-full    hover:scale-105 duration-300 object-cover h-[600px]"
                   />
                 </Link>
               </SwiperSlide>

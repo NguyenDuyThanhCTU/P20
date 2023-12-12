@@ -15,7 +15,12 @@ import {
   AiOutlineSlack,
   AiOutlineUnorderedList,
 } from "react-icons/ai";
-import { FaFirstOrderAlt, FaTiktok } from "react-icons/fa";
+import {
+  FaFirstOrderAlt,
+  FaHome,
+  FaRegNewspaper,
+  FaTiktok,
+} from "react-icons/fa";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { BiNetworkChart, BiSlideshow } from "react-icons/bi";
 import {
@@ -27,11 +32,12 @@ import {
 import {
   MdAirlineSeatReclineNormal,
   MdManageAccounts,
+  MdMiscellaneousServices,
   MdOutlineLocalCarWash,
   MdOutlinePostAdd,
 } from "react-icons/md";
 import { CgListTree, CgSize } from "react-icons/cg";
-import { IoMdColorWand } from "react-icons/io";
+import { IoIosConstruct, IoMdColorWand } from "react-icons/io";
 import { GiExitDoor } from "react-icons/gi";
 
 import { CiViewList } from "react-icons/ci";
@@ -75,6 +81,10 @@ export const IconMapping: IconMappingType = {
   TbCubeSend: TbCubeSend,
   BsFillSendXFill: BsFillSendXFill,
   CiViewList: CiViewList,
+  MdMiscellaneousServices: MdMiscellaneousServices,
+  FaHome: FaHome,
+  IoIosConstruct: IoIosConstruct,
+  FaRegNewspaper: FaRegNewspaper,
 };
 
 import paymentAnimation from "./animation/payment.json";
@@ -88,16 +98,16 @@ export const ProductSidebarAdmin = [
     icon: "AiOutlineSlack",
   },
   {
-    name: "Sản phẩm",
-    icon: "FaFirstOrderAlt",
+    name: "Nội Thất",
+    icon: "FaHome",
   },
   {
-    name: "Sale",
-    icon: "IoFlashOutline",
+    name: "Xây Dựng",
+    icon: "IoIosConstruct",
   },
   {
-    name: "Đơn hàng",
-    icon: "AiOutlineUnorderedList",
+    name: "Tin Tức",
+    icon: "FaRegNewspaper",
   },
   {
     name: "Chi nhánh",
@@ -119,12 +129,12 @@ export const WebsiteSidebarAdmin = [
     icon: "BiNetworkChart",
   },
   {
-    name: "Bài viết",
+    name: "Dịch Vụ Vệ Sinh",
     icon: "MdOutlinePostAdd",
   },
   {
-    name: "Video",
-    icon: "BiSlideshow",
+    name: "Dịch Vụ",
+    icon: "MdMiscellaneousServices",
   },
   {
     name: "Tài khoản",
@@ -434,61 +444,61 @@ export const TopFooterItems = [
 export const HomeServiceItems = [
   {
     content: "Dịch vụ vệ sinh chuyên nghiệp, uy tín, chất lượng hỗ trợ 24/7",
-    title: "VỆ SINH CÔNG NGHIỆP",
+    title: "Vệ Sinh Công Nghiệp",
     image:
       "https://vesinhcongnghiepcantho.com/wp-content/uploads/2023/01/4.jpg.webp",
-    url: "tin-tuc/ve-sinh-cong-nghiep",
+    url: "dich-vu-ve-sinh/ve-sinh-cong-nghiep",
   },
   {
     content: "Tâm Nguyên cung cấp nhân viên tạp vụ văn phòng, gia đình,…",
-    title: "CUNG CẤP TẠP VỤ",
+    title: "Cung Cấp Tạp Vụ",
     image:
       "https://vesinhcongnghiepcantho.com/wp-content/uploads/2021/07/ve-sinh-hang-ngay.jpg.webp",
-    url: "tin-tuc/cung-cap-tap-vu",
+    url: "dich-vu-ve-sinh/cung-cap-tap-vu",
   },
   {
     content:
       "Dịch vụ văn phòng định kỳ, cung cấp tạp vụ văn phòng theo giờ, tổng vệ sinh,…",
-    title: "VỆ SINH VĂN PHÒNG",
+    title: "Vệ Sinh Văn Phòng",
     image:
       "https://vesinhcongnghiepcantho.com/wp-content/uploads/2022/08/z2298558982938_e03603cccb6458a40f0bb265d79ed702-1200x800-1-e1630057235202.jpg.webp",
-    url: "tin-tuc/ve-sinh-van-phong",
+    url: "dich-vu-ve-sinh/ve-sinh-van-phong",
   },
   {
     content:
       "Dịch vụ vệ sinh nhà xưởng, quét mạng nhện, rửa nhà xưởng, vệ sinh đường ống…",
-    title: "VỆ SINH NHÀ XƯỞNG",
+    title: "Vệ Sinh Nhà Xưởng",
     image:
       "https://vesinhcongnghiepcantho.com/wp-content/uploads/2021/07/26915c55257bc5259c6a.jpg.webp",
-    url: "tin-tuc/ve-sinh-nha-xuong",
+    url: "dich-vu-ve-sinh/ve-sinh-nha-xuong",
   },
   {
     content: "Dịch vụ lau kính tòa nhà cao tầng, vệ sinh kính, tẩy cặn oxi…",
-    title: "DỊCH VỤ LAU KÍNH",
+    title: "Dịch Vụ Lau Kính",
     image:
       "https://vesinhcongnghiepcantho.com/wp-content/uploads/2021/07/dich-vu-lau-kinh-nha-cao-tang-tai-nha-trang-uy-tin.jpg.webp",
-    url: "tin-tuc/dich-vu-lau-kinh",
+    url: "dich-vu-ve-sinh/dich-vu-lau-kinh",
   },
   {
     content: "Dịch vụ giặt thảm văn phòng, giặt nệm, giặt sofa tại nhà ",
-    title: "DỊCH VỤ GIẶT THẢM, NỆM, SOFA",
+    title: "Dịch Vụ Giặt Thảm, Nệm, Sofa",
     image:
       "https://vesinhcongnghiepcantho.com/wp-content/uploads/2021/06/dich-vu-giat-tham.jpg",
-    url: "tin-tuc/dich-vu-giat-tham-nem-sofa",
+    url: "dich-vu-ve-sinh/dich-vu-giat-tham-nem-sofa",
   },
   {
     content: "Dịch vụ đánh bóng sàn đá Marble, Granite, Terrazzo,..",
-    title: "ĐÁNH BÓNG SÀN ĐÁ",
+    title: "Đánh Bóng Sàn Đá",
     image:
       "https://vesinhcongnghiepcantho.com/wp-content/uploads/2021/07/2932c34e3ea9cbf792b8-1024x614-1.jpg.webp",
-    url: "tin-tuc/danh-bong-san-da",
+    url: "dich-vu-ve-sinh/danh-bong-san-da",
   },
   {
     content: "Dịch vụ vệ sinh theo giờ, giúp việc theo giờ chuyên nghiệp",
-    title: "THI CÔNG SƠN EPOXY",
+    title: "Thi Công Sơn Epoxy",
     image:
       "https://vesinhcongnghiepcantho.com/wp-content/uploads/2022/02/thi-cong-son-phu-epoxy-lop-thu-nhat-.jpg.webp",
-    url: "tin-tuc/thi-cong-son-epoxy",
+    url: "dich-vu-ve-sinh/thi-cong-son-epoxy",
   },
 ];
 
@@ -535,6 +545,141 @@ export const HomeServiceItems1 = [
     image:
       "https://vesinhcongnghiepcantho.com/wp-content/uploads/2021/06/58468991-system-setup-glyph-bicolor-icon-image-style-is-a-flat-icon-symbol-inside-a-circle-blue-and-gray-colo.jpg",
   },
+];
+
+export const ServiceItems = [
+  {
+    label: "Sửa Nhà",
+    value: "sua-nha",
+  },
+  {
+    label: "Sơn Nhà",
+    value: "son-nha",
+  },
+  {
+    label: "Chống Thấm",
+    value: "chong-tham",
+  },
+  {
+    label: "Chuyển Nhà",
+    value: "chuyen-nha",
+  },
+  {
+    label: "Điện Nước",
+    value: "dien-nuoc",
+  },
+  {
+    label: "Mái Tôn",
+    value: "mai-ton",
+  },
+  {
+    label: "Máng Xối",
+    value: "mang-xoi",
+  },
+  {
+    label: "Cây Xanh",
+    value: "cay-xanh",
+  },
+  {
+    label: "Môi Trường Đô Thị",
+    value: "moi-truong-do-thi",
+  },
+  {
+    label: "Dọn Xà Bần, Rác",
+    value: "don-xa-ban-rac",
+  },
+  {
+    label: "Diệt Côn Trùng",
+    value: "diet-con-trung",
+  },
+];
+
+export const ServiceItems1 = [
+  {
+    label: "Đá",
+    value: "da",
+  },
+  {
+    label: "Cửa",
+    value: "cua",
+  },
+  {
+    label: "Gỗ",
+    value: "go",
+  },
+  {
+    label: "Camera",
+    value: "camera",
+  },
+  {
+    label: "Giấy",
+    value: "giay",
+  },
+  {
+    label: "Thạch Cao",
+    value: "thach-cao",
+  },
+  {
+    label: "Nhôm Kính",
+    value: "nhom-kinh",
+  },
+  {
+    label: "Biển Quảng Cáo",
+    value: "bien-quang-cao",
+  },
+];
+
+export const ServiceItems2 = [
+  {
+    label: "Tin Công Ty",
+    value: "tin-cong-ty",
+  },
+  {
+    label: "Tuyển Dụng",
+    value: "tuyen-dung",
+  },
+  {
+    label: "Kinh Nghiệm – Mẹo Vặt",
+    value: "kinh-nghiem-meo-vat",
+  },
+];
+
+export const ServiceItems3 = [
+  {
+    label: "Vệ Sinh Công Nghiệp",
+    value: "ve-sinh-cong-nghiep",
+  },
+  {
+    label: "Vệ Sinh Nhà",
+    value: "ve-sinh-nha",
+  },
+  {
+    label: "Vệ Sinh Kính",
+    value: "ve-sinh-kinh",
+  },
+  {
+    label: "Vệ Sinh Nhà Xưởng",
+    value: "ve-sinh-nha-xuong",
+  },
+  {
+    label: "Vệ Sinh Bảng Hiệu, Alu",
+    value: "ve-sinh-bang-hieu-alu",
+  },
+  {
+    label: "Cung Cấp Tạp Vụ",
+    value: "cung-cap-tap-vu",
+  },
+  {
+    label: "Giặt Thảm, Nệm, Sofa",
+    value: "giat-tham-nem-sofa",
+  },
+];
+export const ServiceItems4 = [
+  {
+    label: "Bê Tông",
+    value: "be-tong",
+  },
+  ,
 ];
 
 export {};
