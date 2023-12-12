@@ -7,13 +7,13 @@ const Header = () => {
   return (
     <div>
       <div className="h-[85px] w-[1200px] mx-auto flex justify-between items-center">
-        <div className=" ">
+        <Link href={`/`} className=" ">
           <img
             src="https://vesinhcongnghiepcantho.com/wp-content/uploads/2023/03/z4199512708783_6eece53a20d1c9d62eeba5c54693bb0b.jpg.webp"
             alt="logo"
             className="h-[85px] p-4"
           />
-        </div>
+        </Link>
         <div className="flex gap-3 font-normal text-[18px] ">
           {HeaderItems.map((item, index) => (
             <Link

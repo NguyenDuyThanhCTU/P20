@@ -258,7 +258,7 @@ export const HeaderItems = [
     value: "gioi-thieu",
   },
   {
-    label: "Dịch Vụ vệ sinh",
+    label: "Dịch Vụ Vệ Sinh",
     value: "dich-vu-ve-sinh",
   },
   {
@@ -428,6 +428,112 @@ export const TopFooterItems = [
     image:
       "https://firebasestorage.googleapis.com/v0/b/taphoa-605ab.appspot.com/o/support-24-24.1848cf83.png?alt=media&token=8fe9426e-066c-4be6-b0b2-21026be68d27",
     label: "Đảm bảo chất lượng",
+  },
+];
+
+export const HomeServiceItems = [
+  {
+    content: "Dịch vụ vệ sinh chuyên nghiệp, uy tín, chất lượng hỗ trợ 24/7",
+    title: "VỆ SINH CÔNG NGHIỆP",
+    image:
+      "https://vesinhcongnghiepcantho.com/wp-content/uploads/2023/01/4.jpg.webp",
+    url: "tin-tuc/ve-sinh-cong-nghiep",
+  },
+  {
+    content: "Tâm Nguyên cung cấp nhân viên tạp vụ văn phòng, gia đình,…",
+    title: "CUNG CẤP TẠP VỤ",
+    image:
+      "https://vesinhcongnghiepcantho.com/wp-content/uploads/2021/07/ve-sinh-hang-ngay.jpg.webp",
+    url: "tin-tuc/cung-cap-tap-vu",
+  },
+  {
+    content:
+      "Dịch vụ văn phòng định kỳ, cung cấp tạp vụ văn phòng theo giờ, tổng vệ sinh,…",
+    title: "VỆ SINH VĂN PHÒNG",
+    image:
+      "https://vesinhcongnghiepcantho.com/wp-content/uploads/2022/08/z2298558982938_e03603cccb6458a40f0bb265d79ed702-1200x800-1-e1630057235202.jpg.webp",
+    url: "tin-tuc/ve-sinh-van-phong",
+  },
+  {
+    content:
+      "Dịch vụ vệ sinh nhà xưởng, quét mạng nhện, rửa nhà xưởng, vệ sinh đường ống…",
+    title: "VỆ SINH NHÀ XƯỞNG",
+    image:
+      "https://vesinhcongnghiepcantho.com/wp-content/uploads/2021/07/26915c55257bc5259c6a.jpg.webp",
+    url: "tin-tuc/ve-sinh-nha-xuong",
+  },
+  {
+    content: "Dịch vụ lau kính tòa nhà cao tầng, vệ sinh kính, tẩy cặn oxi…",
+    title: "DỊCH VỤ LAU KÍNH",
+    image:
+      "https://vesinhcongnghiepcantho.com/wp-content/uploads/2021/07/dich-vu-lau-kinh-nha-cao-tang-tai-nha-trang-uy-tin.jpg.webp",
+    url: "tin-tuc/dich-vu-lau-kinh",
+  },
+  {
+    content: "Dịch vụ giặt thảm văn phòng, giặt nệm, giặt sofa tại nhà ",
+    title: "DỊCH VỤ GIẶT THẢM, NỆM, SOFA",
+    image:
+      "https://vesinhcongnghiepcantho.com/wp-content/uploads/2021/06/dich-vu-giat-tham.jpg",
+    url: "tin-tuc/dich-vu-giat-tham-nem-sofa",
+  },
+  {
+    content: "Dịch vụ đánh bóng sàn đá Marble, Granite, Terrazzo,..",
+    title: "ĐÁNH BÓNG SÀN ĐÁ",
+    image:
+      "https://vesinhcongnghiepcantho.com/wp-content/uploads/2021/07/2932c34e3ea9cbf792b8-1024x614-1.jpg.webp",
+    url: "tin-tuc/danh-bong-san-da",
+  },
+  {
+    content: "Dịch vụ vệ sinh theo giờ, giúp việc theo giờ chuyên nghiệp",
+    title: "THI CÔNG SƠN EPOXY",
+    image:
+      "https://vesinhcongnghiepcantho.com/wp-content/uploads/2022/02/thi-cong-son-phu-epoxy-lop-thu-nhat-.jpg.webp",
+    url: "tin-tuc/thi-cong-son-epoxy",
+  },
+];
+
+export const HomeServiceItems1 = [
+  {
+    title: "ĐẢM BẢO TIẾN ĐỘ",
+    content:
+      "Chúng tôi luôn bảo đảm tiến độ công việc trong mọi dự án. Nhanh chóng, hiệu quả và an toàn tuyệt đối. Chúng tôi làm việc 24/7.",
+    image:
+      "https://vesinhcongnghiepcantho.com/wp-content/uploads/2021/06/employer-icon-3.png",
+  },
+  {
+    title: "DỊCH VỤ UY TÍN",
+    content:
+      "Với phương châm khách hàng là cốt lõi chúng tôi luôn luôn đảm bảo mọi quyền lợi cho khách hàng một cách tốt nhất.",
+    image:
+      "https://vesinhcongnghiepcantho.com/wp-content/uploads/2021/06/download.png",
+  },
+  {
+    title: "GIÁ CÁ CẠNH TRANH",
+    content:
+      "Với đội ngũ nhân công giàu kinh nghiệm cùng máy móc hiện đại chúng tôi cam kết mang chính sách giá hợp lý nhất cho khách hàng.",
+    image:
+      "https://vesinhcongnghiepcantho.com/wp-content/uploads/2021/06/finpage_icon.png.webp",
+  },
+  {
+    title: "ĐỘI NGŨ CHUYÊN NGHIỆP",
+    content:
+      "Chúng tôi có đội ngũ nhân viên nhiều kinh nghiệm trong lĩnh vực vệ sinh công nghiệp hiện đại. Tâm Nguyên luôn tiếp thu những kiến thức mới.",
+    image:
+      "https://vesinhcongnghiepcantho.com/wp-content/uploads/2021/06/images.png",
+  },
+  {
+    title: "HÓA CHẤT CHUYÊN DỤNG ",
+    content:
+      "Chúng tôi sử dụng những loại hóa chất chuyên dụng nhập khẩu được cấp phép của bộ ý tế thân thiện với môi trường và sức khỏe của quý khách.",
+    image:
+      "https://vesinhcongnghiepcantho.com/wp-content/uploads/2021/06/download.jpg.webp",
+  },
+  {
+    title: "MÁY MÓC HIỆN ĐẠI",
+    content:
+      "chúng tôi không ngừng cải tiến, đầu tư trang thiết bị – máy móc hiện đại nhằm ngày càng nâng cao chất lượng dịch vụ.",
+    image:
+      "https://vesinhcongnghiepcantho.com/wp-content/uploads/2021/06/58468991-system-setup-glyph-bicolor-icon-image-style-is-a-flat-icon-symbol-inside-a-circle-blue-and-gray-colo.jpg",
   },
 ];
 
