@@ -254,24 +254,32 @@ export const SocialMediaCustom = [
 
 export const HeaderItems = [
   {
-    label: "Trang chủ",
-    value: "",
-  },
-  {
-    label: "Sản phẩm",
-    value: "san-pham",
-  },
-  {
     label: "Giới thiệu",
     value: "gioi-thieu",
   },
   {
-    label: "Tin tức",
-    value: "tin-tuc",
+    label: "Dịch Vụ vệ sinh",
+    value: "dich-vu-ve-sinh",
   },
   {
-    label: "Liên hệ",
-    value: "lien-he",
+    label: "Dịch Vụ",
+    value: "dich-vu",
+  },
+  {
+    label: "Nội Thất",
+    value: "noi-that",
+  },
+  {
+    label: "Xây Dựng",
+    value: "xay-dung",
+  },
+  {
+    label: "Bảng giá",
+    value: "bang-gia",
+  },
+  {
+    label: "Tin Tức",
+    value: "tin-tuc",
   },
 ];
 
@@ -306,20 +314,32 @@ export const ToolsTipsSocialMediaItems = [
 
 export const TypeProductItems = [
   {
-    label: "Nệm",
-    value: "nem",
+    label: "Wifi Camera",
+    value: "wifi-camera",
   },
   {
-    label: "Drap",
-    value: "drap",
+    label: "Dual lens Camera",
+    value: "dual-lens-camera",
   },
   {
-    label: "Gối",
-    value: "goi",
+    label: "4G Camera",
+    value: "4g-camera",
   },
   {
-    label: "Phụ kiện",
-    value: "phu-kien",
+    label: "Battery Camera",
+    value: "battery-camera",
+  },
+  {
+    label: "Camera Trọn bộ",
+    value: "camera-tron-bo",
+  },
+  {
+    label: "Phụ Kiện Camera",
+    value: "phu-kien-camera",
+  },
+  {
+    label: "Thiết Bị Thông Minh",
+    value: "thiet-bi-thong-minh",
   },
 ];
 
@@ -347,38 +367,25 @@ export const TypePostItems = [
     label: "Tin tức",
     value: "tin-tuc",
   },
-
-  {
-    label: "Giao nhận hàng",
-    value: "giao-nhan-hang",
-    animation: paymentAnimation,
-  },
-  {
-    label: "Chính sách đổi trả",
-    value: "chinh-sach-doi-tra",
-    animation: rulesAnimation,
-  },
-  {
-    label: "Chính sách đặt hàng",
-    value: "chinh-sach-dat-hang",
-    animation: policyAnimation,
-  },
   {
     label: "Chính sách bảo mật",
     value: "chinh-sach-bao-mat",
+    animation: paymentAnimation,
+  },
+  {
+    label: "Chính sách thanh toán",
+    value: "chinh-sach-thanh-toan",
+    animation: rulesAnimation,
+  },
+  {
+    label: "Cam kết chất lượng dịch vụ",
+    value: "cam-ket-chat-luong-dich-vu",
+    animation: policyAnimation,
+  },
+  {
+    label: "Chính sách bảo hành",
+    value: "chinh-sach-bao-hanh",
     animation: securityAnimation,
-  },
-  {
-    label: "Thông tin nệm Việt Á",
-    value: "thong-tin-nem-viet-a",
-  },
-  {
-    label: "Chia sẽ kiến thức",
-    value: "chia-se-kien-thuc",
-  },
-  {
-    label: "Tại sao chọn nệm Việt Á",
-    value: "tai-sao-chon-nem-viet-a",
   },
 ];
 
