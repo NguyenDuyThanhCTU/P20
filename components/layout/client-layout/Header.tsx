@@ -10,7 +10,7 @@ import {
 import { RxCross2 } from "react-icons/rx";
 
 import { useData } from "@context/DataProviders";
-import { Drawer } from "antd";
+import { Drawer, Modal } from "antd";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
@@ -18,17 +18,19 @@ import { AiOutlineDown } from "react-icons/ai";
 import { FaSearch } from "react-icons/fa";
 import { IoIosMenu } from "react-icons/io";
 import { IoSearchOutline } from "react-icons/io5";
+import Trademark from "@components/admin/Content/Webconfig/Trademark/Trademark";
 
 const Header = () => {
   const [openSearchMB, setOpenSearchMB] = useState(false);
   const [openTypeMB, setOpenTypeMB] = useState(0);
-  const { ContactData, Products, productTypes } = useData();
+  const { ContactData, Products, Posts, productTypes, TradeMarkData } =
+    useData();
   const [search, setSearch] = useState("");
   const [searchRs, setSearchRs] = useState([]);
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    const sort = Products?.filter((product: any) =>
+    const sort = Posts?.filter((product: any) =>
       product.title.toLowerCase().includes(search.toLowerCase())
     );
     setSearchRs(sort);
@@ -39,13 +41,14 @@ const Header = () => {
     setOpen(false);
     router.push(url);
   };
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <>
       <div className="fixed top-0 w-full bg-white shadow-lg z-50">
         <div className="h-[85px] w-[1200px] mx-auto flex justify-between items-center">
           <Link href={`/`} className=" ">
             <img
-              src="https://vesinhcongnghiepcantho.com/wp-content/uploads/2023/03/z4199512708783_6eece53a20d1c9d62eeba5c54693bb0b.jpg.webp"
+              src={TradeMarkData.websiteLogo}
               alt="logo"
               className="h-[85px] p-4"
             />
@@ -186,18 +189,21 @@ const Header = () => {
             ))}
           </div>
           <div>
-            <div className="text-[20px] bg-mainorange p-2 text-white rounded-full">
+            <div
+              className="text-[20px] bg-mainorange p-2 text-white rounded-full cursor-pointer"
+              onClick={() => setIsModalOpen(true)}
+            >
               <IoSearchOutline />
             </div>
           </div>
         </div>
       </div>
       <div className="d:hidden p:block bg-mainNormalBlue ">
-        <div className="h-[84px] fixed z-50 w-full top-0 bg-gradient-to-bl from-mainblue via-blue-400 to-mainNormalBlue  text-white shadow-xl">
+        <div className="h-[84px] fixed z-50 w-full top-0 bg-white  text-black shadow-xl">
           <div className="px-4 w-full flex justify-between items-center">
             <Link href={`/`} className="h-[84px]">
               <img
-                src="https://vesinhcongnghiepcantho.com/wp-content/uploads/2023/03/z4199512708783_6eece53a20d1c9d62eeba5c54693bb0b.jpg.webp"
+                src={TradeMarkData.websiteLogo}
                 alt="Logo"
                 className="w-full h-full p-2"
               />
@@ -268,10 +274,7 @@ const Header = () => {
           >
             <div className=" ">
               <div onClick={() => HandleNavigate("/")} className="p-5">
-                <img
-                  src="https://vesinhcongnghiepcantho.com/wp-content/uploads/2023/03/z4199512708783_6eece53a20d1c9d62eeba5c54693bb0b.jpg.webp"
-                  alt="logo"
-                />
+                <img src={TradeMarkData.websiteLogo} alt="logo" />
               </div>
 
               <div>
@@ -289,6 +292,56 @@ const Header = () => {
               </div>
             </div>
           </Drawer>
+        </>
+        <>
+          <Modal
+            closeIcon={false}
+            open={isModalOpen}
+            onCancel={() => setIsModalOpen(false)}
+            footer={false}
+          >
+            <div className=" relative bg-white py-3">
+              <div className="border rounded-full bg-white border-mainblue flex items-center ">
+                <div className=" pl-4 w-full  justify-between items-center grid grid-cols-7">
+                  <input
+                    type="text"
+                    className="outline-none mr-2 col-span-6 text-mainblue"
+                    placeholder="Tìm kiếm"
+                    value={search}
+                    onChange={(e) => setSearch(e.target.value)}
+                  />
+                  <div>
+                    <div
+                      className={`${
+                        search ? "block" : "hidden"
+                      }  bg-gray-500 text-gray-300 w-max p-1 rounded-full text-[10px] cursor-pointer`}
+                      onClick={() => setSearch("")}
+                    >
+                      <RxCross2 />
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-mainblue py-3 px-6 text-white rounded-r-full cursor-pointer">
+                  <FaSearch />
+                </div>
+              </div>
+              {search && (
+                <div className="absolute w-full bg-gray-50 top-full flex flex-col shadow-inner z-50 mt-2">
+                  <div className=" flex flex-col">
+                    {searchRs.map((product: any, idx: number) => (
+                      <Link
+                        href={`$chi-tiet-san-pham/${product.url}`}
+                        key={idx}
+                        className="cursor-pointer p-2 hover:bg-gray-100"
+                      >
+                        {product.title}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          </Modal>
         </>
       </div>
     </>

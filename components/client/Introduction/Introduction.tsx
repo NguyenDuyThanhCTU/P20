@@ -8,7 +8,10 @@ const Introduction = () => {
   const markup = { __html: Introduction?.content };
   return (
     <>
-      <div dangerouslySetInnerHTML={markup} className="text-[18px]"></div>
+      <div
+        dangerouslySetInnerHTML={markup}
+        className="text-[18px] flex flex-col items-center"
+      ></div>
     </>
   );
 };

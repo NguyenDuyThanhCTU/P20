@@ -4,7 +4,7 @@ import React from "react";
 
 const Services = () => {
   return (
-    <div className=" w-max">
+    <div className="p:w-auto d:w-max">
       <div className="border-b pb-2">
         <div className="uppercase font-bold text-[1.5rem] ">
           <div className="hover:text-mainblue text-redPrimmary before:w-[50px] before:h-[1px] before:inline-block  before:bg-black before:mr-2 text-center cursor-default">
@@ -13,7 +13,7 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-6 w-[1200px] mx-auto mt-10">
+      <div className="grid p:grid-cols-1 d:grid-cols-2 gap-6 p:w-auto  d:w-[1200px] mx-auto mt-10">
         {HomeServiceItems.map((item, index) => (
           <Link
             href={`/${item.url}`}

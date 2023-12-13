@@ -20,7 +20,7 @@ const HomeService = () => {
                 <img
                   src={item.image}
                   alt="service"
-                  className="w-[200px] h-[200px] object-contain hover:scale-110 duration-300 rounded-lg"
+                  className="w-full h-[200px] object-contain hover:scale-110 duration-300 rounded-lg"
                 />
               </div>
               <div className="col-span-3 text-center mt-5 mr-2">

@@ -110,7 +110,7 @@ export const ProductSidebarAdmin = [
     icon: "FaRegNewspaper",
   },
   {
-    name: "Chi nhánh",
+    name: "Bảng giá",
     icon: "CgListTree",
   },
 ];
@@ -446,11 +446,11 @@ export const HomeServiceItems = [
     content: "Dịch vụ vệ sinh chuyên nghiệp, uy tín, chất lượng hỗ trợ 24/7",
     title: "Vệ Sinh Công Nghiệp",
     image:
-      "https://vesinhcongnghiepcantho.com/wp-content/uploads/2023/01/4.jpg.webp",
+      "https://dichvuphuocthai.com/wp-content/uploads/2021/06/dich-vu-ve-sinh-cong-nghiep-tai-nha-trang.png",
     url: "dich-vu-ve-sinh/ve-sinh-cong-nghiep",
   },
   {
-    content: "Tâm Nguyên cung cấp nhân viên tạp vụ văn phòng, gia đình,…",
+    content: "Sửa Nhà Cần Thơ cung cấp nhân viên tạp vụ văn phòng, gia đình,…",
     title: "Cung Cấp Tạp Vụ",
     image:
       "https://vesinhcongnghiepcantho.com/wp-content/uploads/2021/07/ve-sinh-hang-ngay.jpg.webp",
@@ -527,7 +527,7 @@ export const HomeServiceItems1 = [
   {
     title: "ĐỘI NGŨ CHUYÊN NGHIỆP",
     content:
-      "Chúng tôi có đội ngũ nhân viên nhiều kinh nghiệm trong lĩnh vực vệ sinh công nghiệp hiện đại. Tâm Nguyên luôn tiếp thu những kiến thức mới.",
+      "Chúng tôi có đội ngũ nhân viên nhiều kinh nghiệm trong lĩnh vực vệ sinh công nghiệp hiện đại. Sửa Nhà Cần Thơ luôn tiếp thu những kiến thức mới.",
     image:
       "https://vesinhcongnghiepcantho.com/wp-content/uploads/2021/06/images.png",
   },
@@ -680,6 +680,37 @@ export const ServiceItems4 = [
     value: "be-tong",
   },
   ,
+];
+
+export const PriceItems = [
+  {
+    label: "Vệ Sinh Nhà - Công Trình",
+    value: "ve-sinh-nha-cong-trinh",
+  },
+  {
+    label: "Vệ Sinh Nhà Xưởng",
+    value: "ve-sinh-nha-xuong",
+  },
+  {
+    label: "Đánh Bóng Sàn Đá",
+    value: "danh-bong-san-da",
+  },
+  {
+    label: "Vệ Sinh Kính Alu, Biển Hiệu",
+    value: "ve-sinh-kinh-alu-bien-hieu",
+  },
+  {
+    label: "Tạp Vụ Văn Phòng",
+    value: "tap-vu-van-phong",
+  },
+  {
+    label: "Giặt Thảm, Sofa, Nệm, Rèm Cửa",
+    value: "giat-tham-sofa-nem-rem-cua",
+  },
+  {
+    label: "Dịch Vụ Khác",
+    value: "dich-vu-khac",
+  },
 ];
 
 export {};

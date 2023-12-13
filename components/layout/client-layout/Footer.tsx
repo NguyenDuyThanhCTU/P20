@@ -6,7 +6,7 @@ import React from "react";
 import { FaFacebookF, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
-  const { ContactData } = useData();
+  const { ContactData, TradeMarkData } = useData();
   return (
     <div className="bg-[#ada8a8]">
       <div className="bg-[rgba(0,0,0,.5)]">
@@ -14,7 +14,7 @@ const Footer = () => {
           <div className=" flex flex-col items-center text-white gap-5">
             <div>
               <img
-                src="https://vesinhcongnghiepcantho.com/wp-content/uploads/2023/01/SSSS.png"
+                src={TradeMarkData?.websiteLogo}
                 alt="logo"
                 className="h-[56px] "
               />
