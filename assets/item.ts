@@ -447,14 +447,14 @@ export const HomeServiceItems = [
     title: "Vệ Sinh Công Nghiệp",
     image:
       "https://dichvuphuocthai.com/wp-content/uploads/2021/06/dich-vu-ve-sinh-cong-nghiep-tai-nha-trang.png",
-    url: "dich-vu-ve-sinh/ve-sinh-cong-nghiep",
+    url: "bai-viet/ve-sinh-cong-nghiep",
   },
   {
     content: "Sửa Nhà Cần Thơ cung cấp nhân viên tạp vụ văn phòng, gia đình,…",
     title: "Cung Cấp Tạp Vụ",
     image:
       "https://vesinhcongnghiepcantho.com/wp-content/uploads/2021/07/ve-sinh-hang-ngay.jpg.webp",
-    url: "dich-vu-ve-sinh/cung-cap-tap-vu",
+    url: "bai-viet/cung-cap-tap-vu",
   },
   {
     content:
@@ -462,7 +462,7 @@ export const HomeServiceItems = [
     title: "Vệ Sinh Văn Phòng",
     image:
       "https://vesinhcongnghiepcantho.com/wp-content/uploads/2022/08/z2298558982938_e03603cccb6458a40f0bb265d79ed702-1200x800-1-e1630057235202.jpg.webp",
-    url: "dich-vu-ve-sinh/ve-sinh-van-phong",
+    url: "bai-viet/ve-sinh-van-phong",
   },
   {
     content:
@@ -470,35 +470,35 @@ export const HomeServiceItems = [
     title: "Vệ Sinh Nhà Xưởng",
     image:
       "https://vesinhcongnghiepcantho.com/wp-content/uploads/2021/07/26915c55257bc5259c6a.jpg.webp",
-    url: "dich-vu-ve-sinh/ve-sinh-nha-xuong",
+    url: "bai-viet/ve-sinh-nha-xuong",
   },
   {
     content: "Dịch vụ lau kính tòa nhà cao tầng, vệ sinh kính, tẩy cặn oxi…",
     title: "Dịch Vụ Lau Kính",
     image:
       "https://vesinhcongnghiepcantho.com/wp-content/uploads/2021/07/dich-vu-lau-kinh-nha-cao-tang-tai-nha-trang-uy-tin.jpg.webp",
-    url: "dich-vu-ve-sinh/dich-vu-lau-kinh",
+    url: "bai-viet/dich-vu-lau-kinh",
   },
   {
     content: "Dịch vụ giặt thảm văn phòng, giặt nệm, giặt sofa tại nhà ",
     title: "Dịch Vụ Giặt Thảm, Nệm, Sofa",
     image:
       "https://vesinhcongnghiepcantho.com/wp-content/uploads/2021/06/dich-vu-giat-tham.jpg",
-    url: "dich-vu-ve-sinh/dich-vu-giat-tham-nem-sofa",
+    url: "bai-viet/dich-vu-giat-tham-nem-sofa",
   },
   {
     content: "Dịch vụ đánh bóng sàn đá Marble, Granite, Terrazzo,..",
     title: "Đánh Bóng Sàn Đá",
     image:
       "https://vesinhcongnghiepcantho.com/wp-content/uploads/2021/07/2932c34e3ea9cbf792b8-1024x614-1.jpg.webp",
-    url: "dich-vu-ve-sinh/danh-bong-san-da",
+    url: "bai-viet/danh-bong-san-da",
   },
   {
     content: "Dịch vụ vệ sinh theo giờ, giúp việc theo giờ chuyên nghiệp",
     title: "Thi Công Sơn Epoxy",
     image:
       "https://vesinhcongnghiepcantho.com/wp-content/uploads/2022/02/thi-cong-son-phu-epoxy-lop-thu-nhat-.jpg.webp",
-    url: "dich-vu-ve-sinh/thi-cong-son-epoxy",
+    url: "bai-viet/thi-cong-son-epoxy",
   },
 ];
 
@@ -650,30 +650,37 @@ export const ServiceItems3 = [
     value: "ve-sinh-cong-nghiep",
   },
   {
-    label: "Vệ Sinh Nhà",
-    value: "ve-sinh-nha",
+    label: "Cung Cấp Tạp Vụ",
+    value: "cung-cap-tap-vu",
   },
   {
-    label: "Vệ Sinh Kính",
-    value: "ve-sinh-kinh",
+    label: "Vệ Sinh Văn Phòng",
+    value: "ve-sinh-van-phong",
   },
   {
     label: "Vệ Sinh Nhà Xưởng",
     value: "ve-sinh-nha-xuong",
   },
   {
-    label: "Vệ Sinh Bảng Hiệu, Alu",
-    value: "ve-sinh-bang-hieu-alu",
+    label: "Dịch Vụ Lau Kính",
+    value: "dich-vu-lau-kinh",
   },
   {
-    label: "Cung Cấp Tạp Vụ",
-    value: "cung-cap-tap-vu",
+    label: "Dịch Vụ Giặt Thảm, Nệm, Sofa",
+    value: "dich-vu-giat-tham-nem-sofa",
   },
+
   {
-    label: "Giặt Thảm, Nệm, Sofa",
-    value: "giat-tham-nem-sofa",
+    label: "Đánh Bóng Sàn Đá",
+    value: "danh-bong-san-da",
+  },
+
+  {
+    label: "Thi Công Sơn Epoxy",
+    value: "thi-cong-son-epoxy",
   },
 ];
+
 export const ServiceItems4 = [
   {
     label: "Bê Tông",

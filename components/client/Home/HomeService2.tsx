@@ -199,7 +199,7 @@ const HomeService2 = () => {
                                 c&ocirc;ng nghiệp &ndash;{" "}
                                 <strong>
                                   C&ocirc;ng ty dịch vệ sinh c&ocirc;ng nghiệp
-                                  Cần Thơ &ndash; T&acirc;m Nguy&ecirc;n
+                                  Cần Thơ &ndash; Không Gian Xanh
                                 </strong>{" "}
                                 ch&uacute;ng t&ocirc;i kh&ocirc;ng ngừng nỗ lực
                                 để dần dần đ&aacute;nh dấu thương hiệu, tham
@@ -218,9 +218,9 @@ const HomeService2 = () => {
                                   &nbsp;Dịch vụ vệ sinh c&ocirc;ng nghiệp Cần
                                   Thơ
                                 </strong>{" "}
-                                &ndash; <strong>T&acirc;m Nguy&ecirc;n</strong>{" "}
-                                xin hứa sẽ cung cấp dịch vụ đ&uacute;ng chất
-                                lượng như cam kết trong hợp đồng, lu&ocirc;n
+                                &ndash; <strong>Không Gian Xanh</strong> xin hứa
+                                sẽ cung cấp dịch vụ đ&uacute;ng chất lượng như
+                                cam kết trong hợp đồng, lu&ocirc;n
                                 &nbsp;lu&ocirc;n lắng nghe v&agrave; thấu hiểu
                                 &yacute; kiến đ&oacute;ng g&oacute;p, phản
                                 &aacute;nh của kh&aacute;ch h&agrave;ng để
@@ -232,7 +232,7 @@ const HomeService2 = () => {
                               <span>
                                 <strong>
                                   Dịch vụ vệ sinh c&ocirc;ng nghiệp Cần Thơ
-                                  &ndash; T&acirc;m Nguy&ecirc;n&nbsp;
+                                  &ndash; Không Gian Xanh&nbsp;
                                 </strong>
                                 lu&ocirc;n nỗ lực tiếp thu c&aacute;c kiến thức
                                 mới để phục vụ qu&yacute; kh&aacute;ch
@@ -253,8 +253,7 @@ const HomeService2 = () => {
                             <span>
                               <strong>
                                 Tại sao n&ecirc;n lựa chọn dịch vụ vệ sinh
-                                c&ocirc;ng nghiệp Cần Thơ của T&acirc;m
-                                Nguy&ecirc;n?
+                                c&ocirc;ng nghiệp Cần Thơ của Không Gian Xanh
                               </strong>
                             </span>
                           </p>
@@ -291,15 +290,15 @@ const HomeService2 = () => {
                             <li>
                               <span>
                                 Quy tr&igrave;nh của dịch vụ vệ sinh c&ocirc;ng
-                                nghiệp Cần Thơ &ndash; T&acirc;m Nguy&ecirc;n
-                                chuẩn quốc tế
+                                nghiệp Cần Thơ &ndash; Không Gian Xanh chuẩn
+                                quốc tế
                               </span>
                             </li>
                             <li>
                               <span>
                                 Cam kết về chất lượng vệ sinh:&nbsp;Dịch vụ vệ
                                 sinh c&ocirc;ng nghiệp Cần Thơ&nbsp;&ndash;
-                                T&acirc;m Nguy&ecirc;n với khẩu hiệu chất lượng
+                                Không Gian Xanh với khẩu hiệu chất lượng
                                 l&agrave; danh dự &ndash; h&agrave;i l&ograve;ng
                                 mới thanh to&aacute;n sẽ kh&ocirc;ng phụ
                                 l&ograve;ng qu&yacute; kh&aacute;ch h&agrave;ng
@@ -312,11 +311,11 @@ const HomeService2 = () => {
                                 c&ocirc;ng nghiệp theo định kỳ sẽ được khuyến
                                 m&atilde;i giảm chi ph&iacute;:
                                 Gi&aacute;&nbsp;dịch vụ vệ sinh c&ocirc;ng
-                                nghiệp Cần Thơ&nbsp;của T&acirc;m Nguy&ecirc;n
-                                chỉ ngang bằng, thậm ch&iacute; c&ograve;n rẻ
-                                hơn so với c&aacute;c c&ocirc;ng ty vệ sinh
-                                c&oacute; c&ugrave;ng dịch vụ tr&ecirc;n thị
-                                trường hiện nay.
+                                nghiệp Cần Thơ&nbsp;của Không Gian Xanh chỉ
+                                ngang bằng, thậm ch&iacute; c&ograve;n rẻ hơn so
+                                với c&aacute;c c&ocirc;ng ty vệ sinh c&oacute;
+                                c&ugrave;ng dịch vụ tr&ecirc;n thị trường hiện
+                                nay.
                               </span>
                             </li>
                             <li>

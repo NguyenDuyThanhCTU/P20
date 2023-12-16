@@ -15,6 +15,7 @@ export const metadata: Metadata = {
 const NewsPage = async ({ params }: { params: { slug: string } }) => {
   const Data = await getDataByTypeProps("posts", "topicUrl", params.slug);
   const Topic = ServiceItems2.filter((item) => item.value === params.slug)[0];
+  console.log(Data);
   return (
     <>
       <div className="border h-max border-gray-400 d:block p:hidden col-span-2">

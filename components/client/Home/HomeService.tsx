@@ -12,7 +12,7 @@ const HomeService = () => {
         <div className="grid  gap-6 d:grid-cols-2 p:grid-cols-1 p:w-auto d:w-[1200px] p:mx-2 d:mx-auto">
           {HomeServiceItems.map((item, index) => (
             <Link
-              href={`/dich-vu-ve-sinh/${item.url}`}
+              href={`/${item.url}`}
               key={index}
               className="grid grid-cols-5 items-start justify-start hover:bg-gray-100 duration-300"
             >

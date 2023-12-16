@@ -13,7 +13,11 @@ export const metadata: Metadata = {
 
 const NewsDetailPage = async ({ params }: { params: { slug: string } }) => {
   const Data = await getDataByTypeProps("posts", "url", params.slug);
-  const DataCategory = await getDataByTypeProps("posts", "topic", "Tin tức");
+  const DataCategory = await getDataByTypeProps(
+    "posts",
+    "topic",
+    Data[0]?.topic
+  );
 
   const markup = { __html: Data[0]?.content };
   const DetailPostDate = moment
@@ -42,7 +46,7 @@ const NewsDetailPage = async ({ params }: { params: { slug: string } }) => {
             </div>
             <div className="flex items-center gap-1 text-gray-400">
               <AiOutlineUser />
-              <p className=""> RunTech+</p>
+              <p className=""> KhongGianXanh+</p>
             </div>
           </div>
         </div>

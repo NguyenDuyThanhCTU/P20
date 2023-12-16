@@ -47,7 +47,7 @@ const ListPost = ({ url }: any) => {
           <p>hình ảnh</p>
         </div>
 
-        {Posts.filter((posts: any) => posts.topicUrl === url).map(
+        {Posts.filter((posts: any) => posts.typeUrl === url).map(
           (data: any, idx: number) => {
             return (
               <div key={data.id} className="grid cols-4 py-4   items-center">

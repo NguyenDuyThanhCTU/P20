@@ -30,7 +30,7 @@ const NewsPage = async () => {
             Danh Sách Tất Cả Tin tức Nội Thất
           </h1>
           <div className="flex flex-col gap-8">
-            {Data.map((item: any, idx: number) => {
+            {Data?.map((item: any, idx: number) => {
               const DetailPostDate = moment
                 .unix(item?.createdAt.seconds)
                 .format("MMMM DD, YYYY");

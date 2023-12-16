@@ -2,7 +2,7 @@ import { PriceItems } from "@assets/item";
 import Introduction from "@components/client/Introduction/Introduction";
 import Price from "@components/client/Price/Price";
 import PriceCard from "@components/client/Price/PriceCard";
-import { getAllDataProps, getDataByTypeProps } from "@lib/get-data";
+import { getAllDataProps } from "@lib/get-data";
 import { Metadata } from "next";
 import React from "react";
 

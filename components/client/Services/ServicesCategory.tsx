@@ -12,7 +12,7 @@ const ServicesCategory = ({ Data }: any) => {
           .format("MMMM DD, YYYY");
         return (
           <Link
-            href={`/dich-vu-ve-sinh/${item.url}`}
+            href={`/bai-viet/${item.url}`}
             key={idx}
             className="py-2 border-b"
           >
